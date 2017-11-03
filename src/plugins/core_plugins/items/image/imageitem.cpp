@@ -421,13 +421,13 @@ void ImageItem::paint(QPainter * painter, const QStyleOptionGraphicsItem *option
             point.setY(point.y() + (rect.height() - ch) /2);
 
             if (point.x() < 0) {
-                cx = abs(point.x());
+                cx = qAbs(point.x());
                 cw -= 2*cx;
                 point.setX(0);
             }
 
             if (point.y() < 0) {
-                cy = abs(point.y());
+                cy = qAbs(point.y());
                 ch -= 2*cy;
                 point.setY(0);
             }
